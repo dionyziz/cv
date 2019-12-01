@@ -1,0 +1,305 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Dionysis}{Zindros}{
+\urlstyle{same}\url{dionyziz.com} \textbullet{}
+\urlstyle{same}\url{github.com/dionyziz} \textbullet{}
+\urlstyle{same}\url{twitter.com/dionyziz}
+\\
+\href{mailto:dionyziz@di.uoa.gr}{dionyziz@di.uoa.gr} | +30 6942462092
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+
+\subsection{University of Athens}
+\descript{Cryptography PhD candidate in Computer Science}
+\location{Expected Feb 2020 | Athens, Greece}
+\sectionsep
+
+\subsection{National Technical University of Athens}
+\descript{Dipl.-Ing in Electrical and Computer Engineering}
+\location{2008 - 2015 | Athens, Greece}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Teaching}
+\subsection{Teaching Assistantship}
+\location{Spring 2017, Spring 2016}
+\textbf{Computer Security}. University of Athens\\
+\location{Fall 2015, Fall 2014}
+\textbf{\href{http://crypto-class.gr/lectures/}{Cryptography}}. Athens Polytechnic\\
+\location{Fall 2012}
+\textbf{Algorithms}. Athens Polytechnic\\
+\location{Spring 2011}
+\textbf{Discrete Math}. Athens Polytechnic\\
+\sectionsep
+
+\subsection{Courses Taught}
+\location{2015}
+\textbf{\href{http://git-class.gr/}{Git-class}}. 4-hour seminar.\\
+\location{2014}
+\textbf{\href{http://security-class.gr/}{Security-class}}. 10-hour seminar.\\
+\location{2010}
+\textbf{\href{https://web-class.gr/}{Web-class}}. 50-hour seminar.\\
+\sectionsep
+
+\subsection{Olympiad Coaching}
+\location{2017}
+\textbf{Balkan Olympiad in Informatics}\\
+\location{2015, 2012}
+\textbf{Junior Balkan Olympiad in Informatics}\\
+\location{2017, 2016, 2015, 2012, 2011, 2010}
+\textbf{National Greek Olympiad in Informatics}\\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Technical skills}
+\location{Expert}
+Cryptography \textbullet{}
+Blockchains \textbullet{}
+Bitcoin\\
+BREACH/CRIME \textbullet{}
+\{Op,Info,Prod\}sec \\
+OTR \textbullet{}
+GPG \textbullet{}
+Tor \textbullet{}
+Databases \textbullet{}
+PHP \\
+Python/Django \textbullet{}
+JS \textbullet{}
+jQuery \textbullet{}
+node.js \\
+MySQL \textbullet
+HTML5/CSS3 \textbullet{}
+C/C++ \textbullet{}
+Git
+\\
+\location{Advanced}
+Netsec \textbullet{}
+bcoin.js \textbullet{}
+Linux \textbullet{}
+vim \textbullet{}
+systems \\
+SQLite \textbullet{}
+TCP/IP \textbullet{}
+OpenGL \textbullet{}
+WebGL \\
+HTTP \textbullet{}
+IRC \textbullet{}
+XML/XSLT/XQuery \textbullet{}
+react
+\\
+\location{Intermediate}
+UI/UX \textbullet{}
+Ruby/Rails \textbullet{}
+Scala \textbullet{}
+\LaTeX \textbullet{}
+MatLab \textbullet{}
+Scheme \textbullet{}
+Haskell \textbullet{}
+Assembly
+% SVN, CVS, Pascal
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Publications}
+Kiayias, A., Miller, A., \& \underline{Zindros, D}.
+``\href{https://eprint.iacr.org/2017/963.pdf}{Non-Interactive Proofs of Proof-of-Work}''.\\
+Litos, O. S. T., \& \underline{Zindros, D}.
+``\href{https://eprint.iacr.org/2017/156.pdf}{Trust Is Risk: A Decentralized Financial Trust Platform}''.
+Financial Cryptography and Data Security 2017.\\
+Karakostas, D., Kiayias, A., Sarafianou, E., \& \underline{Zindros, D}.
+``\href{https://www.blackhat.com/docs/eu-16/materials/eu-16-Karakostas-Ctx-Eliminating-BREACH-With-Context-Hiding.pdf}{CTX: Eliminating BREACH with Context Hiding}''. Black Hat EU 2016.\\
+Karakostas, D., \& \underline{Zindros, D}.
+``\href{https://www.youtube.com/watch?v=T4iTwNLPv4g&list=PLH15HpR5qRsWLd417eaJNy7CCEDyA53Pz&index=5}{Practical New Developments on BREACH}''. Black Hat Asia 2016.\\
+\underline{Zindros, D}.
+``\href{https://dionyziz.com/pseudonymous-trust-2.pdf}{Creating OpenBazaar: Trust in Decentralized Anonymous Marketplaces}''.
+Athens Polytechnic Master Thesis 2016.
+(\href{https://github.com/OpenBazaar/OpenBazaar-Server}{Implementation})\\
+\underline{Zindros, D}.
+``\href{http://discrete.gr/complexity}
+{A Gentle Introduction to Algorithm Complexity Analysis}''.
+2012.
+\sectionsep
+
+\section{Invited Conference Talks}
+Kiayias, A., Sarafianou E., \& \underline{Zindros, D}.
+``\href{https://rwc.iacr.org/2017/Slides/eva.sarafianou.pdf}{Productizing TLS
+Attacks: The Rupture API}''.
+Real World Crypto Symposium 2017,
+Columbia University NYC.\\
+``\href{https://www.youtube.com/watch?v=IbKgeN3bd80}{Writing Smart Contracts}''. Smart Contracts Day 2017, Athens.\\
+Karakostas D., Kiayias, A., \& \underline{Zindros, D}.
+``\href{https://rwc.iacr.org/2016/Slides/New\%20developments\%20on\%20BREACH.pdf}{New developments in BREACH}''.
+Real World Crypto Symposium 2016,
+Stanford University.\\
+Karakostas, D., Sarafianou E., \& \underline{Zindros, D}.
+``Rupture: Automating cryptanalysis of HTTPS for AES ciphers''.
+BSides Athens 2016.\\
+``\href{http://mirror.as35701.net/video.fosdem.org//2015/lightning_talks/openbazaar.mp4}{OpenBazaar}''.
+Lightning talk,
+FOSDEM 2015,
+Brussels.\\
+``\href{https://www.youtube.com/watch?v=0UfxGgoSaHc}{HTTPS BREACH}'': Keynote speaker, ECESCON 2014, Thessaloniki.\\
+% ``\href{https://www.youtube.com/watch?v=khdTRJMN9fQ}{Bitcoin, an introduction}''.
+% TEDxYouth 2013,
+% Ioannina.\\
+% ``Bitcoin, an overview'':
+% Department of Defence Crypto Conference 2012,
+% Athens.\\
+``\href{https://github.com/dionyziz/webgl-seminar}{An introduction to WebGL}''. OpenFest 2011 \& FOSSCOMM 2011
+% in Patras
+\& \href{http://webseminars.ee.auth.gr/#lectures}{AUTH} 2011.
+% XXX Bsides
+\sectionsep
+
+\section{Professional Experience}
+
+\runsubsection{Google}
+\descript{| Software Engineer }
+\location{2014 - 2015 | Zurich, Switzerland}
+Improved corporate security by building forensics and security tools used by the Google Incident Response and corporate network monitoring teams.
+\sectionsep
+
+\runsubsection{Twitter}
+\descript{| Product Security Intern }
+\location{2013 - 2014 | San Francisco, CA}
+Successfully identified vulnerable end-points and recommended mitigations in the areas of web security, particularly \href{https://developer.mozilla.org/en-US/docs/Security/CSP}{CSP} and \href{http://breachattack.com/}{BREACH}.
+\sectionsep
+
+\runsubsection{Kamibu}
+\descript{Co-Founder, Technical Lead}
+\location{2010 - 2011 | Athens, Greece}
+Start-up gaming software company.
+% Raised \$70,000.
+%Products:
+(\href{https://github.com/kamibu/finalengine}{Source})
+\sectionsep
+
+\runsubsection{deviantART}
+\descript{Backend Software Engineer}
+\location{2006 - 2008 | Los Angeles, CA}
+% Community with 50,000,000 daily hits, 15,000,000 users.
+Wrote 200,000 of PHP and 5,000 of SQL back-end code.
+Leveraged memcached, sharding and partitioning to improve application performance and scalability.
+\sectionsep
+
+\runsubsection{Zino}
+\descript{Co-Founder, Technical Lead}
+\location{2005 - 2010 | Greece}
+Created over 300,000 lines of PHP, Javascript, HTML/CSS, XML/XSLT code and supervised 4 - 5 programmers to build a 18,000-user social network. (\href{https://github.com/dionyziz/zino}{Source})
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards \& Fellowships}
+
+\begin{tabular}{rll}
+2017   & IOHK & Junior Research Fellow\\
+2006   & Balkan Olympiad in Informatics & Bronze medal\\
+% 2006   & International Olympiad in Informatics & Participation
+\end{tabular}
+\sectionsep
+
+\end{minipage}
+\end{document}
