@@ -1,0 +1,366 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+\usepackage{lmodern, textcomp}
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Christos}{Pappas}
+\title{PhD in Computer Science}                               % optional, remove / comment the line if not wanted
+\address{Sumatrastrasse 1}{8006 Z\"urich, Switzerland}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+41 787056099}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{chrispappas12@gmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+\extrainfo{Date of birth: 3 Feb. 1989\\                 % optional, remove / comment the line if not wanted
+Nationality: Greek/German \vspace{-5pt}}                 % optional, remove / comment the line if not wanted
+\photo[64pt][1pt]{newcvpic.jpg}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\setlength\arrayrulewidth{.4pt}
+\setlength\tabcolsep{6pt}
+
+\newif \iflong
+\longtrue
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+%\vspace{-50pt}
+\makecvtitle
+%\vspace{-20pt}
+\section{Education}
+\cventry[8pt]{2013--2018}{PhD in Computer Science}{ETH Z\"urich}{Switzerland}{}{%
+Research Areas: Network Security, Network Transparency, Privacy \& Accountability, SDN
+\\Dissertation: \textit{Bootstrapping Transparency for Internet Communication} (Advised by Prof.~Adrian Perrig)
+\iflong
+Courses: Advanced Computer Networks, Machine Learning, Software-Defined Networking, Randomized Algorithms \& Probabilistic Methods
+\fi
+}  % arguments 3 to 6 can be left empty
+\cventry[8pt]{2006--2012}{Dipl.-Ing Electrical \& Computer Engineering}{National Technical University of Athens}{Greece}{}{GPA: 8.50/10 (top 5\%)\\ Specialization: Computer Systems \& Networks \\ Thesis: \textit{Search and Retrieval of Multimodal Audiovisual Content} (Advised by Prof. S. Papavassiliou)}
+
+%\vspace{5pt}
+\section{Experience}
+\cventry[8pt]{Jan 2019--Present}{Associate Director, Identity \& Access Management Engineer}{UBS AG}{Switzerland}{}{%
+\begin{itemize}
+	\item Working on client-facing authentication solutions for US Wealth Management e-banking.
+	\item Technical leader and system architect for biometric and second-factor authentication solutions.
+\end{itemize}
+%
+}
+\cventry[8pt]{Nov 2017--Nov 2018}{Postdoctoral Researcher}{ETH Z\"urich}{Switzerland}{}{%
+\begin{itemize}
+	\item Backbones in Space: Designing and evaluating an interdomain protocol to support Internet backbones with low-earth-orbit satellites (e.g., SpaceX). 
+	\item Bandwidth Reservation at Internet Scale: Designing, implementing, and formally verifying an Internet-scale system that offers guaranteed QoS to senders.
+	%\item Designing, analyzing, and implementing an Internet-scale bandwidth reservation system.
+	\item Sustainable Evolution for the TLS Public-Key Infrastructure: Extending OpenSSL and implementing cloud-based
+	PKI enhancements (e.g., Certificate Transparency), with a latency inflation of less than 2\% for 90\% of the TLS connections.
+\end{itemize}
+%
+}
+\cventry[8pt]{Aug 2017--Nov 2018}{Coordinator at the Z\"urich Information Security Center}{ETH Z\"urich}{Switzerland}{}{%
+\begin{itemize}
+\item Coordinating research, leading projects, and providing consulting services in cooperation with industry partners (e.g., NEC, Armasuisse, Swiss Post, Z\"urcher Kantonalbank, Z\"urich Insurance).
+\end{itemize}
+%
+}
+
+\cventry[8pt]{Sep 2013--Nov 2018}{Head Teaching Assistant}{ETH Z\"urich}{Switzerland}{}{%
+Helping with course organization and assisting students in computer science and networking courses.
+}
+
+\cventry[8pt]{Jun 2013--Oct 2017}{Graduate Research Assistant}{ETH Z\"urich}{Switzerland}{}{%
+\begin{itemize}
+	\item Transparent Data Forwarding: Implementing transparency
+mechanisms on a software switch that can forward packets at a line rate of
+120~Gbps, and can process 140M packets per second.
+	\item In-network Replay Suppression: Designing an in-network mechanism for
+replay suppression, and implementing a prototype that needs 8~MB of memory for a
+fully-saturated 10~Gbps link.
+	\item Verifiable Network Performance Measurements: Implementing a
+delayed-disclosure algorithm that exports performance receipts for sampled
+network traffic.
+	\item Forwarding Accountability for the SDN data-plane: Building security
+into the SDN data plane. 
+	%\item Balancing source accountability and privacy at the network layer:
+%Devising a stateless pseudonym-based architecture that leverages symmetric-key
+%cryptographic primitives.
+\end{itemize}
+}
+
+
+\cventry[8pt]{Oct 2011--Apr 2013}{Research Assistant}{Network Management \& Optimal Design Lab}{Athens}{Greece}{%
+%Specialized in experimentation and testing frameworks for future Internet and multimedia services.%
+\begin{itemize}
+%\item Fed4FIRE: Research on developing a demand-driven common federation framework, based on an open architecture and specification.
+\item TEFIS: Prototyping a novel mechanism for extending QoS to QoE in mobile wireless networks.
+\item 3DTVS: Working on efficient metadata storage and search algorithms of 3D audiovisual content.
+\end{itemize}
+}
+%\cventry[10pt]{2007--2008}{Lab Assistant}{Computation and Reasoning Laboratory}{Athens}{Greece}{%
+%I assisted students in their lab exercises for introductory computer science courses.
+%}
+\urlstyle{same}
+\cventry[8pt]{Jun 2006--Oct 2010}{Co-founder/Software Engineer}{Zino}{Athens}{Greece}{%
+Co-founded ``Zino'', a social network in Greece with over 20.000 members.  
+Adopted novel technologies and techniques that were not widely used at that time 
+(e.g., ajax, node.js, comet, image spriting).
+%\\GitHub Repository: \url{https://github.com/dionyziz/zino}
+}
+%\cventry[10pt]{2006--2007}{Software Engineer}{Shmmy}{Athens}{Greece}{%
+%I developed the front and back-end code for a university forum accommodating course information and material.
+%}
+%\cventry[5pt]{2005--2006}{Software Engineer}{BlogCube}{Ioannina}{Greece}{%
+%Participated in the creation of an experimental blogging platform that was completely
+%based on ajax.
+%}
+
+%\vspace{5pt}
+\newpage
+\section{Technical Skills}
+\cvitem[2pt]{Languages}{C/C++, Python, Java}
+\cvitem[2pt]{OSes}{Linux (Debian, Arch, Gentoo), Mac OS X, Windows}
+\cvitem[2pt]{Other}{TCP/IP, SSL/TLS, DPDK, IPsec, BGP}
+
+\section{Languages}
+\cvitem[2pt]{English}{Excellent (Level C2, TOEFL iBT: 117/120)}
+\cvitem[2pt]{German}{Native}
+\cvitem[2pt]{Greek}{Native}
+
+\section{Honors \& Awards}
+\cvitem[2pt]{2013}{``The General Michael Arnaoutis Foundation'' Scholarship (12,000€)}
+\cvitem[2pt]{2013}{Offered Provost's PhD Fellowship from New York University (\$20,000)}
+\cvitem[2pt]{2006-2011}{``Afoi Zosima'' Foundation Scholarship (15,000€)}
+\cvitem[2pt]{2007}{National Award for the top 20\% of Students in ECE}
+
+\iflong
+\section{Advised Students}
+\cvitem[2pt]{Master Thesis}{Giacomo Giuliari, \textit{Internet Backbones in Space}, 2018}
+\cvitem[2pt]{Master Thesis}{Dominik Roos, \textit{SIBRA Implementation}, 2018}
+\cvitem[2pt]{Master Thesis}{Aleksandar Vorkapic, \textit{Secure Blockchain Network Communication using SCION}, 2018}
+\cvitem[2pt]{Master Thesis}{Lukas Bischofberger, \textit{Backdoor Evasion through Encryption and Chaffing}, 2017}
+\cvitem[2pt]{Master Project}{Pragnya Alatur, \textit{Linux Kernel Implementation of APNA}, 2017}
+\cvitem[2pt]{Bachelor Thesis}{Shiyu Huang, \textit{In-Network Replay Suppression for SCION}, 2017}
+\cvitem[2pt]{Master Project}{Nicola Rustignoli, \textit{Forwarding Accountability in the Future Internet}, 2016}
+\cvitem[2pt]{Bachelor Thesis}{Pragnya Alatur, \textit{Implementation of a Stateless SDN Data Plane}, 2015}
+
+\section{Presentations \& Invited Talks}
+\cvitem{}{%
+\begin{itemize}
+\item Bootstrapping Transparency for Internet Communication
+	\begin{itemize}
+		\item International Symposium on Future Internet, University of Padua, Italy, 2018
+		\item National University of Singapore, Singapore, 2017
+		\item Nanyang Technological University, Singapore, 2017
+		\item Singapore Management University, Singapore, 2017
+		\item ETH Z\"urich, Switzerland, 2017
+	\end{itemize}
+\end{itemize}
+}
+
+\vspace{-10pt}
+\cvitem{}{%
+\begin{itemize}
+\item Dissemination of Paths in Path-Aware Networks
+	\begin{itemize}
+	\item Internet Engineering Task Force (IETF 100), Singapore, 2017
+	\end{itemize}
+\end{itemize}
+}
+
+\vspace{-10pt}
+\cvitem{}{%
+\begin{itemize}
+\item Network Transparency for Better Internet Security
+	\begin{itemize}
+		\item Electronics \& Telecommunications Research Institute (ETRI), Daejon, S. Korea, 2017
+	\end{itemize}
+\end{itemize}
+}
+
+\vspace{-10pt}
+\cvitem{}{%
+\begin{itemize}
+\item Transparency Instead of Neutrality
+	\begin{itemize}
+		\item Workshop on Hot Topics in Networking, Philadelphia, USA, 2015
+	\end{itemize}
+\end{itemize}
+}
+
+\vspace{-10pt}
+\cvitem{}{%
+\begin{itemize}
+\item FAIR: Forwarding Accountability for Internet Reputability
+	\begin{itemize}
+	\item International Conference on Network Protocols, San Francisco, USA, 2015
+	\end{itemize}
+\end{itemize}
+}
+
+\vspace{-10pt}
+\cvitem{}{%
+\begin{itemize}
+\item Forwarding Accountability: A Challenging Necessity of the Future Data Plane
+	\begin{itemize}
+	\item Open Research Problems in Network Security, Z\"urich, Switzerland, 2015
+	\end{itemize}
+\end{itemize}
+}
+
+\vspace{-10pt}
+\cvitem{}{%
+\begin{itemize}
+\item SCION: A Secure Next-Generation Internet Architecture
+	\begin{itemize}
+	\item National Technical University of Athens, Athens, Greece, 2015
+	\end{itemize}
+\end{itemize}
+}
+\fi
+
+%\section{Interests}
+%\cvitem{hobby 1}{Description}
+%\cvitem{hobby 2}{Description}
+%\cvitem{hobby 3}{Description}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{pubs}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+\section{Publications}
+\cvitem{[ToN'19]}{%
+\textit{Network Transparency for Better Internet Security}\newline{}%
+{\color[rgb]{0.7,0.7,0.7}{\color{black}Christos Pappas}, Taeho Lee, Raphael M. Reischuk, Pawel Szalachowski, Adrian Perrig}\newline{}%
+Transactions on Networking, 2019%
+}
+\cvitem{[SIGMETRICS'19]}{%
+\textit{Retro-active Packet Sampling}\newline{}%
+{\color[rgb]{0.7,0.7,0.7}Pavlos Nikolopoulos, {\color{black}Christos Pappas}, Katerina Argyraki, Adrian Perrig}\newline{}%
+Measurement and Analysis of Computing Systems - SIGMETRICS%
+}
+\cvitem{[HotNets'18]}{%
+\textit{Networking, in Heaven as on Earth}\newline{}%
+{\color[rgb]{0.7,0.7,0.7}Tobias Klenze, Giacomo Giuliari, {\color{black}Christos Pappas}, Adrian Perrig, David Basin}\newline{}%
+Workshop on Hot Topics in Networking, Redmond, USA, 2018%
+}
+\cvitem{[CCR'18]}{%
+\textit{Bootstrapping Privacy Services in Today's Internet}\newline{}%
+{\color[rgb]{0.7,0.7,0.7}Taeho Lee, {\color{black}Christos Pappas}, Adrian Perrig}\newline{}%
+SIGCOMM Computer Communication Review, 2018%
+}
+\cvitem{[AsiaCCS'18]}{%
+\textit{Towards Sustainable Evolution for the TLS Public-Key Infrastructure}\newline{}%
+{\color[rgb]{0.7,0.7,0.7}Taeho Lee, {\color{black}Christos Pappas}, Pawel Szalachowski, Adrian Perrig}\newline{}%
+Asia Conference on Computer Communications and Security, Songdo, S.Korea, 2018%
+}
+\cvitem{[PhD Diss.'17]}{%
+\textit{Bootstrapping Transparency for Internet Communication}\newline{}%
+{\color{black}Christos Pappas, PhD Dissertation, 2017}\newline{}%
+}
+\vspace{-8pt}
+\cvitem{[AsiaCCS'17]}{%
+\textit{The Case for In-Network Replay Suppression}\newline{}%
+{\color[rgb]{0.7,0.7,0.7}Taeho Lee, {\color{black}Christos Pappas}, Adrian Perrig, Virgil Gligor, Yih-Chun Hu}\newline{}%
+Asia Conference on Computer Communications and Security, Abu Dhabi, UAE, 2017%
+}
+\vspace{2pt}
+\cvitem{[CoNEXT'16]}{%
+\textit{Source Accountability with Domain-brokered Privacy}\newline{}%
+{\color[rgb]{0.7,0.7,0.7}Taeho Lee, {\color{black}Christos Pappas}, David Barrera, Pawel Szalachowski, Adrian Perrig}\newline{}%
+Int. Conference on emerging Networking EXperiments and Technologies, Irvine, USA, 2016%
+}
+\vspace{2pt}
+\cvitem{[ICNP'16]}{%
+\textit{Communication Based on Per-Packet One-Time Addresses}\newline{}%
+{\color[rgb]{0.7,0.7,0.7}Taeho Lee, {\color{black}Christos Pappas}, Pawel Szalachowski, Adrian Perrig}\newline{}%
+International Conference on Network Protocols, Singapore, 2016%
+}
+\vspace{2pt}
+\cvitem{[ICCCN'16]}{%
+\textit{SDNsec: Forwarding Accountability for the SDN Data Plane}\newline{}%
+{\color[rgb]{0.7,0.7,0.7}Takayuki Sasaki, {\color{black}Christos Pappas}, Taeho Lee, Torsten Hoefler, Adrian Perrig}\newline{}%
+Int. Conference on Computer Communication and Networks 2016, Hawaii, USA, 2016%
+}
+\vspace{2pt}
+\cvitem{[APCC'16]}{%
+\textit{On the Implementation of Path-Based Dynamic Pricing in Edge-Directed Routing}\newline{}%
+{\color[rgb]{0.7,0.7,0.7}Jumpei Urakawa, Cristina Basescu, Kohei Sugiyama, {\color{black}Christos Pappas}, Akira Yamada, et al.}\newline{}%
+Asia-Pacific Conference on Communications, Yogyakarta, Indonesia, 2016%
+}
+\vspace{2pt}
+\cvitem{[HotNets'15]}{%
+\textit{Transparency Instead of Neutrality}\newline{}%
+{\color[rgb]{0.7,0.7,0.7}{\color{black}Christos Pappas}, Katerina Argyraki, Stefan Bechtold, Adrian Perrig}\newline{}%
+Workshop on Hot Topics in Networking, Philadelphia, USA, 2015%
+}
+\vspace{2pt}
+\cvitem{[ICNP'15]}{%
+\textit{FAIR: Forwarding Accountability for Internet Reputability}\newline{}%
+{\color[rgb]{0.7,0.7,0.7}{\color{black}Christos Pappas}, Raphael M. Reischuk, Adrian Perrig}\newline{}%
+International Conference on Network Protocols, San Francisco, USA, 2015%
+}
+\vspace{2pt}
+\cvitem{[iNetSec'15]}{%
+\textit{Forwarding Accountability: A Challenging Necessity of the Future Data Plane}\newline{}%
+{\color[rgb]{0.7,0.7,0.7}{\color{black}Christos Pappas}, Raphael M. Reischuk, Adrian Perrig}\newline{}%
+Open Research Problems in Network Security, Z\"urich, Switzerland, 2015%
+}
+\vspace{2pt}
+\cvitem{[CFI'15]}{%
+\textit{Source-Based Path Selection: The Data Plane Perspective}\newline{}%
+{\color[rgb]{0.7,0.7,0.7}Taeho Lee, {\color{black}Christos Pappas}, Cristina Basescu, Jun Han, Torsten Hoefler, Adrian Perrig}\newline{}%
+International Conference on Future Internet Technologies, Seoul, S. Korea, 2015%
+}
+\vspace{2pt}
+\cvitem{[ADHOC'13]}{%
+\textit{Design and Assessment of a Reputation-Based Trust Framework in Wireless Testbeds Utilizing User Experience}\newline{}%
+{\color[rgb]{0.7,0.7,0.7}Aggelos Kapoukakis, {\color{black}Christos Pappas}, Georgios Androulidakis, Symeon Papavassiliou}\newline{}%
+ADHOC-NOW, Wroclaw, Poland, 2013%
+}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{pubs}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{transp}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+\end{document}
+
+
+%% end of file `template.tex'.
