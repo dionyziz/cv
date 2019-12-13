@@ -17,6 +17,7 @@
 % character encoding
 \usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
 \usepackage{lmodern, textcomp}
+\usepackage{url}
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
@@ -25,16 +26,17 @@
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
-\name{Christos}{Pappas}
-\title{PhD in Computer Science}                               % optional, remove / comment the line if not wanted
-\address{Sumatrastrasse 1}{8006 Z\"urich, Switzerland}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
-\phone[mobile]{+41 787056099}                   % optional, remove / comment the line if not wanted
+\name{Dionysis}{Zindros}
+% \title{PhD in Computer Science}                               % optional, remove / comment the line if not wanted
+\address{Taxilou 66}{15772 Athens, Greece}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+30 6942462092}                   % optional, remove / comment the line if not wanted
 %\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
 %\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
-\email{chrispappas12@gmail.com}                               % optional, remove / comment the line if not wanted
-%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
-\extrainfo{Date of birth: 3 Feb. 1989\\                 % optional, remove / comment the line if not wanted
-Nationality: Greek/German \vspace{-5pt}}                 % optional, remove / comment the line if not wanted
+\email{dionyziz@gmail.com}                               % optional, remove / comment the line if not wanted
+\extrainfo{\href{https://dionyziz.com}{dionyziz.com}
+\textbullet{} \href{https://github.com/dionyziz}{github.com/dionyziz}\\
+Date of birth: 30 Nov 1987\\                 % optional, remove / comment the line if not wanted
+Nationality: Greek}                 % optional, remove / comment the line if not wanted
 \photo[64pt][1pt]{newcvpic.jpg}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 %\quote{Some quote}                                 % optional, remove / comment the line if not wanted
 
@@ -62,81 +64,41 @@ Nationality: Greek/German \vspace{-5pt}}                 % optional, remove / co
 \makecvtitle
 %\vspace{-20pt}
 \section{Education}
-\cventry[8pt]{2013--2018}{PhD in Computer Science}{ETH Z\"urich}{Switzerland}{}{%
-Research Areas: Network Security, Network Transparency, Privacy \& Accountability, SDN
-\\Dissertation: \textit{Bootstrapping Transparency for Internet Communication} (Advised by Prof.~Adrian Perrig)
-\iflong
-Courses: Advanced Computer Networks, Machine Learning, Software-Defined Networking, Randomized Algorithms \& Probabilistic Methods
-\fi
+\cventry[8pt]{2015--Mar 2020 (expected)}{PhD in Computer Science}{University of Athens}{Greece}{}{%
+Research Areas: Cryptography, Blockchains
+\\Dissertation: \textit{Decentralized Blockchain Interoperability}\newline{}
+Advised by Prof.~Aggelos Kiayias
 }  % arguments 3 to 6 can be left empty
-\cventry[8pt]{2006--2012}{Dipl.-Ing Electrical \& Computer Engineering}{National Technical University of Athens}{Greece}{}{GPA: 8.50/10 (top 5\%)\\ Specialization: Computer Systems \& Networks \\ Thesis: \textit{Search and Retrieval of Multimodal Audiovisual Content} (Advised by Prof. S. Papavassiliou)}
+\cventry[8pt]{2008--2015}{MEng Electrical \& Computer Engineering}{National Technical University of Athens}{Greece}{}{Specialization: Security \& Cryptography \\ Thesis: \href{https://dionyziz.com/pseudonymous-trust-2.pdf}{\textit{Creating OpenBazaar: Trust in Decentralized Anonymous Marketplaces}}\newline{}
+Advised by Prof.~Aris Pagourtzis}
 
 %\vspace{5pt}
-\section{Experience}
-\cventry[8pt]{Jan 2019--Present}{Associate Director, Identity \& Access Management Engineer}{UBS AG}{Switzerland}{}{%
-\begin{itemize}
-	\item Working on client-facing authentication solutions for US Wealth Management e-banking.
-	\item Technical leader and system architect for biometric and second-factor authentication solutions.
-\end{itemize}
+\section{Professional Experience}
+\cventry[8pt]{2014--2015}{Software Engineer}{Google}{Z\"urich}{Switzerland}{%
+Improved corporate security by building forensics and security tools used by the Google Incident Response and corporate network monitoring teams.
 %
 }
-\cventry[8pt]{Nov 2017--Nov 2018}{Postdoctoral Researcher}{ETH Z\"urich}{Switzerland}{}{%
-\begin{itemize}
-	\item Backbones in Space: Designing and evaluating an interdomain protocol to support Internet backbones with low-earth-orbit satellites (e.g., SpaceX). 
-	\item Bandwidth Reservation at Internet Scale: Designing, implementing, and formally verifying an Internet-scale system that offers guaranteed QoS to senders.
-	%\item Designing, analyzing, and implementing an Internet-scale bandwidth reservation system.
-	\item Sustainable Evolution for the TLS Public-Key Infrastructure: Extending OpenSSL and implementing cloud-based
-	PKI enhancements (e.g., Certificate Transparency), with a latency inflation of less than 2\% for 90\% of the TLS connections.
-\end{itemize}
+\cventry[8pt]{2013--2014}{Product Security Intern}{Twitter}{San Francisco}{USA}{%
+Successfully identified vulnerable end-points and recommended mitigations in the areas of web security, particularly \href{http://breachattack.com/}{BREACH} and \href{https://developer.mozilla.org/en-US/docs/Security/CSP}{CSP}.
 %
 }
-\cventry[8pt]{Aug 2017--Nov 2018}{Coordinator at the Z\"urich Information Security Center}{ETH Z\"urich}{Switzerland}{}{%
-\begin{itemize}
-\item Coordinating research, leading projects, and providing consulting services in cooperation with industry partners (e.g., NEC, Armasuisse, Swiss Post, Z\"urcher Kantonalbank, Z\"urich Insurance).
-\end{itemize}
+\cventry[8pt]{2010--2011}{Co-Founder, Technical Lead}{Kamibu}{Athens}{Greece}{%
+Co-founded start-up gaming software company with 5 fellow students.
+Fund-raised a seed round of $\$70{,}000$ to create
+WebGL-based game engine.% (\href{https://github.com/kamibu/finalengine}{Source}).
 %
 }
 
-\cventry[8pt]{Sep 2013--Nov 2018}{Head Teaching Assistant}{ETH Z\"urich}{Switzerland}{}{%
-Helping with course organization and assisting students in computer science and networking courses.
+\cventry[8pt]{2006--2008}{Backend Software Engineer}{deviantART}{Los Angeles, USA}{}{%
+Community with 50,000,000 daily hits, 15,000,000 users.
+Wrote 200,000 of PHP and 5,000 of SQL back-end code.
+Leveraged memcached, sharding and partitioning to improve application performance and scalability.
 }
 
-\cventry[8pt]{Jun 2013--Oct 2017}{Graduate Research Assistant}{ETH Z\"urich}{Switzerland}{}{%
-\begin{itemize}
-	\item Transparent Data Forwarding: Implementing transparency
-mechanisms on a software switch that can forward packets at a line rate of
-120~Gbps, and can process 140M packets per second.
-	\item In-network Replay Suppression: Designing an in-network mechanism for
-replay suppression, and implementing a prototype that needs 8~MB of memory for a
-fully-saturated 10~Gbps link.
-	\item Verifiable Network Performance Measurements: Implementing a
-delayed-disclosure algorithm that exports performance receipts for sampled
-network traffic.
-	\item Forwarding Accountability for the SDN data-plane: Building security
-into the SDN data plane. 
-	%\item Balancing source accountability and privacy at the network layer:
-%Devising a stateless pseudonym-based architecture that leverages symmetric-key
-%cryptographic primitives.
-\end{itemize}
-}
-
-
-\cventry[8pt]{Oct 2011--Apr 2013}{Research Assistant}{Network Management \& Optimal Design Lab}{Athens}{Greece}{%
-%Specialized in experimentation and testing frameworks for future Internet and multimedia services.%
-\begin{itemize}
-%\item Fed4FIRE: Research on developing a demand-driven common federation framework, based on an open architecture and specification.
-\item TEFIS: Prototyping a novel mechanism for extending QoS to QoE in mobile wireless networks.
-\item 3DTVS: Working on efficient metadata storage and search algorithms of 3D audiovisual content.
-\end{itemize}
-}
-%\cventry[10pt]{2007--2008}{Lab Assistant}{Computation and Reasoning Laboratory}{Athens}{Greece}{%
-%I assisted students in their lab exercises for introductory computer science courses.
-%}
 \urlstyle{same}
-\cventry[8pt]{Jun 2006--Oct 2010}{Co-founder/Software Engineer}{Zino}{Athens}{Greece}{%
-Co-founded ``Zino'', a social network in Greece with over 20.000 members.  
-Adopted novel technologies and techniques that were not widely used at that time 
-(e.g., ajax, node.js, comet, image spriting).
+\cventry[8pt]{2005--2010}{Co-Founder, Technical Lead}{Zino}{Athens}{Greece}{%
+Co-founded ``Zino'', a social network in Greece with over 20,000 members.
+Created over 300,000 lines of PHP, Javascript, HTML/CSS, XML/XSLT code and supervised 4 - 5 programmers.
 %\\GitHub Repository: \url{https://github.com/dionyziz/zino}
 }
 %\cventry[10pt]{2006--2007}{Software Engineer}{Shmmy}{Athens}{Greece}{%
@@ -147,110 +109,93 @@ Adopted novel technologies and techniques that were not widely used at that time
 %based on ajax.
 %}
 
-%\vspace{5pt}
-\newpage
-\section{Technical Skills}
-\cvitem[2pt]{Languages}{C/C++, Python, Java}
-\cvitem[2pt]{OSes}{Linux (Debian, Arch, Gentoo), Mac OS X, Windows}
-\cvitem[2pt]{Other}{TCP/IP, SSL/TLS, DPDK, IPsec, BGP}
-
-\section{Languages}
-\cvitem[2pt]{English}{Excellent (Level C2, TOEFL iBT: 117/120)}
-\cvitem[2pt]{German}{Native}
-\cvitem[2pt]{Greek}{Native}
-
-\section{Honors \& Awards}
-\cvitem[2pt]{2013}{``The General Michael Arnaoutis Foundation'' Scholarship (12,000€)}
-\cvitem[2pt]{2013}{Offered Provost's PhD Fellowship from New York University (\$20,000)}
-\cvitem[2pt]{2006-2011}{``Afoi Zosima'' Foundation Scholarship (15,000€)}
-\cvitem[2pt]{2007}{National Award for the top 20\% of Students in ECE}
-
 \iflong
-\section{Advised Students}
-\cvitem[2pt]{Master Thesis}{Giacomo Giuliari, \textit{Internet Backbones in Space}, 2018}
-\cvitem[2pt]{Master Thesis}{Dominik Roos, \textit{SIBRA Implementation}, 2018}
-\cvitem[2pt]{Master Thesis}{Aleksandar Vorkapic, \textit{Secure Blockchain Network Communication using SCION}, 2018}
-\cvitem[2pt]{Master Thesis}{Lukas Bischofberger, \textit{Backdoor Evasion through Encryption and Chaffing}, 2017}
-\cvitem[2pt]{Master Project}{Pragnya Alatur, \textit{Linux Kernel Implementation of APNA}, 2017}
-\cvitem[2pt]{Bachelor Thesis}{Shiyu Huang, \textit{In-Network Replay Suppression for SCION}, 2017}
-\cvitem[2pt]{Master Project}{Nicola Rustignoli, \textit{Forwarding Accountability in the Future Internet}, 2016}
-\cvitem[2pt]{Bachelor Thesis}{Pragnya Alatur, \textit{Implementation of a Stateless SDN Data Plane}, 2015}
-
-\section{Presentations \& Invited Talks}
-\cvitem{}{%
-\begin{itemize}
-\item Bootstrapping Transparency for Internet Communication
-	\begin{itemize}
-		\item International Symposium on Future Internet, University of Padua, Italy, 2018
-		\item National University of Singapore, Singapore, 2017
-		\item Nanyang Technological University, Singapore, 2017
-		\item Singapore Management University, Singapore, 2017
-		\item ETH Z\"urich, Switzerland, 2017
-	\end{itemize}
-\end{itemize}
+\section{Publications}
+\else
+\section{Selected Publications}
+\fi
+\cvitem{[FC'20]}{%
+\textit{\href{https://eprint.iacr.org/2017/963.pdf}{Non-Interactive Proofs of Proof-of-Work}}\newline{}%
+{\color[rgb]{0.7,0.7,0.7}Aggelos Kiayias, Andrew Miller, {\color{black}Dionysis Zindros}}\newline{}%
+To appear in Financial Cryptography and Data Security, Malaysia, 2020%
 }
-
-\vspace{-10pt}
-\cvitem{}{%
-\begin{itemize}
-\item Dissemination of Paths in Path-Aware Networks
-	\begin{itemize}
-	\item Internet Engineering Task Force (IETF 100), Singapore, 2017
-	\end{itemize}
-\end{itemize}
+\cvitem{[FC'20]}{%
+\textit{\href{https://eprint.iacr.org/2019/1096.pdf}{Proof-of-Burn}}\newline{}%
+{\color[rgb]{0.7,0.7,0.7}Kostis Karantias, {\color{black}Dionysis Zindros}, Aggelos Kiayias}\newline{}%
+To appear in Financial Cryptography and Data Security, Malaysia, 2020%
 }
-
-\vspace{-10pt}
-\cvitem{}{%
-\begin{itemize}
-\item Network Transparency for Better Internet Security
-	\begin{itemize}
-		\item Electronics \& Telecommunications Research Institute (ETRI), Daejon, S. Korea, 2017
-	\end{itemize}
-\end{itemize}
+\cvitem{[S\&P'19]}{%
+\textit{\href{https://eprint.iacr.org/2018/1239.pdf}{Proof-of-Stake Sidechains}}\newline{}%
+{\color[rgb]{0.7,0.7,0.7}Peter Ga\v{z}i, Aggelos Kiayias, {\color{black}Dionysis Zindros}}\newline{}%
+IEEE Symposium on Security and Privacy, San Francisco, USA, 2019%
 }
-
-\vspace{-10pt}
-\cvitem{}{%
-\begin{itemize}
-\item Transparency Instead of Neutrality
-	\begin{itemize}
-		\item Workshop on Hot Topics in Networking, Philadelphia, USA, 2015
-	\end{itemize}
-\end{itemize}
+\cvitem{[FC WTSC'19]}{%
+\textit{\href{https://eprint.iacr.org/2018/1048.pdf}{Proof-of-Work Sidechains}}\newline{}%
+{\color[rgb]{0.7,0.7,0.7}Aggelos Kiayias, {\color{black}Dionysis Zindros}}\newline{}%
+Financial Cryptography Workshop on Trusted Smart Contracts,
+St.Kitts \& Nevis, 2019%
 }
-
-\vspace{-10pt}
-\cvitem{}{%
-\begin{itemize}
-\item FAIR: Forwarding Accountability for Internet Reputability
-	\begin{itemize}
-	\item International Conference on Network Protocols, San Francisco, USA, 2015
-	\end{itemize}
-\end{itemize}
+\cvitem{[TOKENOMICS'19]}{%
+\textit{\href{https://arxiv.org/pdf/1907.02434}{Cryptocurrency Egalitarianism: A Quantitative Approach}}\newline{}%
+{\color[rgb]{0.7,0.7,0.7}Dimitris Karakostas, Aggelos Kiayias, Christos Nasikas, {\color{black}Dionysis Zindros}}\newline{}%
+International Conference on Blockchain Economics, Security and Protocols, Paris, France, 2019%
 }
-
-\vspace{-10pt}
-\cvitem{}{%
-\begin{itemize}
-\item Forwarding Accountability: A Challenging Necessity of the Future Data Plane
-	\begin{itemize}
-	\item Open Research Problems in Network Security, Z\"urich, Switzerland, 2015
-	\end{itemize}
-\end{itemize}
+\cvitem{[MARBLE'19]}{%
+\textit{Compact Storage of Superblocks for NIPoPoW Applications}\newline{}%
+{\color[rgb]{0.7,0.7,0.7}Kostis Karantias, Aggelos Kiayias, {\color{black}Dionysis Zindros}}\newline{}%
+Mathematical Research for Blockchain Economy, Santorini, Greece, 2019%
+\iflong\newline
+Nominated for Best Paper Award%
+\fi
 }
-
-\vspace{-10pt}
-\cvitem{}{%
-\begin{itemize}
-\item SCION: A Secure Next-Generation Internet Architecture
-	\begin{itemize}
-	\item National Technical University of Athens, Athens, Greece, 2015
-	\end{itemize}
-\end{itemize}
+\iflong
+\cvitem{ePrint Preprint 2019}{%
+\textit{\href{https://pdfs.semanticscholar.org/e982/1e278efb615ded08c51aa6f7315d00e3841c.pdf}{SoK: Communication Across Distributed Ledgers}}\newline{}%
+{\color[rgb]{0.7,0.7,0.7}Alexei Zamyatin, Mustafa Al-Bassam, {\color{black}Dionysis Zindros}, Eleftherios Kokoris-Kogias,\newline{}Pedro Moreno-Sanchez, Aggelos Kiayias, William J Knottenbelt}
+%\newline{}%
+% ePrint Archive, 2019%
+}
+\fi
+\iflong
+\vspace{2pt}
+\cvitem{arXiv Preprint 2018}{%
+\textit{\href{https://arxiv.org/pdf/1811.01348}{Structure and Content of the Visible Darknet}}\newline{}%
+{\color[rgb]{0.7,0.7,0.7}Georgia Avarikioti, Roman Brunner, Aggelos Kiayias, Roger Wattenhofer, {\color{black}Dionysis Zindros}}
+%\newline{}%
+% arXiv, 2018%
+}
+\fi
+\vspace{2pt}
+\cvitem{[FC'17]}{%
+\textit{\href{https://eprint.iacr.org/2017/156.pdf}{Trust Is Risk: A Decentralized Financial Trust Platform}}\newline{}%
+{\color[rgb]{0.7,0.7,0.7}Orfeas Stefanos Thyfronitis Litos, {\color{black}Dionysis Zindros}}\newline{}%
+Financial Cryptography and Data Security, Malta, 2017
+%
+}
+\vspace{2pt}
+\cvitem{[BH EU'16]}{%
+\textit{\href{https://www.blackhat.com/docs/eu-16/materials/eu-16-Karakostas-Ctx-Eliminating-BREACH-With-Context-Hiding.pdf}{CTX: Eliminating BREACH with Context Hiding}}\newline{}%
+{\color[rgb]{0.7,0.7,0.7}Dimitris Karakostas, Aggelos Kiayias, Eva Sarafianou, {\color{black}Dionysis Zindros}}\newline{}%
+Black Hat Europe, London, UK, 2016%
+}
+\vspace{2pt}
+\cvitem{[BH ASIA'16]}{%
+\textit{\href{https://www.youtube.com/watch?v=T4iTwNLPv4g&list=PLH15HpR5qRsWLd417eaJNy7CCEDyA53Pz&index=5}{Practical New Developments on BREACH}}\newline{}%
+{\color[rgb]{0.7,0.7,0.7}Dimitris Karakostas, {\color{black}Dionysis Zindros}}\newline{}%
+Black Hat Asia, Singapore, 2016%
+}
+\iflong
+\vspace{2pt}
+\cvitem{[MEng Thesis]}{%
+\textit{\href{https://dionyziz.com/pseudonymous-trust-2.pdf}{Creating OpenBazaar: Trust in Decentralized Anonymous Marketplaces}}\newline{}%
+% {\color{black}Dionysis Zindros}\newline{}%
+National Technical University of Athens MEng Thesis, 2016
+%
 }
 \fi
 
+%\vspace{5pt}
+%\newpage
 %\section{Interests}
 %\cvitem{hobby 1}{Description}
 %\cvitem{hobby 2}{Description}
@@ -263,97 +208,212 @@ Adopted novel technologies and techniques that were not widely used at that time
 %\bibliographystyle{plain}
 %\bibliography{pubs}                        % 'publications' is the name of a BibTeX file
 
+\section{Teaching}
+\subsection{Lecturing}
+\iflong
+\cventry[8pt]{Spring 2019}{Blockchain Science and Engineering}{University of Athens}{Greece}{}{%
+Prof. Aggelos Kiayias. Additional Lecturing: Christos Nasikas, Dionysis Zindros\newline{}
+Graduate Course, Department of Computer Science
+}
+
+\cventry[8pt]{Spring 2017}{Security of Computer Systems}{University of Athens}{Greece}{}{%
+Dimitris Mitropoulos. Additional Lecturing: Dionysis Zindros\newline{}
+Undergraduate and Graduate Courses, Department of Computer Science
+}
+
+\cventry[8pt]{Spring 2016}{Security of Computer Systems}{University of Athens}{Greece}{}{%
+Prof. Aggelos Kiayias. Additional Lecturing: Yannis Tselekounis, Dionysis Zindros\newline{}
+Undergraduate and Graduate Courses, Department of Computer Science
+}
+
+\cventry[8pt]{Fall 2015}{Cryptography}{National Technical University of Athens}{Greece}{}{%
+Prof. Aris Pagourtzis \& Stathis Zachos\newline{}
+Additional Lecturing: Antonis Antonopoulos, Panagiotis Grontas,
+Petros Potikas, Dionysis Zindros\newline{}
+Undergraduate Course, Department of Computer Engineering
+}
+
+\cventry[8pt]{Fall 2010}{Introduction to Web Development}{National Technical University of Athens}{Greece}{}{%
+Petros Angelatos, Dionysis Zindros\newline{}
+52-hour Extracurricular Undergraduate Seminar
+}
+\else
+\cvitem[2pt]{Spring 2019}{\textbf{Blockchain Science and Engineering}, University of Athens, Greece}%
+\cvitem[2pt]{Spring 2016--17}{\textbf{Security of Computer Systems}, University of Athens, Greece}%
+\cvitem[2pt]{Fall 2015}{\textbf{Cryptography}, National Technical University of Athens, Greece}%
+\cvitem[2pt]{Fall 2010}{\textbf{Introduction to Web Development}, Student Seminar, Athens, Greece}%
+\fi
+
+\subsection{Teaching Assistantship}
+\iflong
+\iflong
+\cventry[8pt]{Fall 2014}{Cryptography}{National Technical University of Athens}{Greece}{}{%
+Prof. Aris Pagourtzis \& Stathis Zachos\newline{}
+Undergraduate Course, Department of Electrical \& Computer Engineering
+}
+\fi
+\cventry[8pt]{Fall 2012}{Algorithms and Complexity}{National Technical University of Athens}{Greece}{}{%
+Prof. Dimitris Fotakis \& Stathis Zachos\newline{}
+Undergraduate Course, Department of Electrical \& Computer Engineering
+}
+\cventry[8pt]{Spring 2011}{Discrete Mathematics}{National Technical University of Athens}{Greece}{}{%
+Prof. Foto Afrati \& Dimitris Fotakis\newline{}
+Undergraduate Course, Department of Electrical \& Computer Engineering
+}
+\else
+\cvitem[2pt]{Fall 2012}{\textbf{Algorithms and Complexity}, National Technical University of Athens, Greece}%
+\cvitem[2pt]{Spring 2011}{\textbf{Discrete Mathematics}, National Technical University of Athens, Greece}%
+\fi
+
+% \subsection{Seminars}
+% \cventry[8pt]{2015}{Introduction to Git}
+% \subsection{Courses Taught}
+% \location{2015}
+% \textbf{\href{http://git-class.gr/}{Git-class}}. 4-hour seminar.\\
+% \location{2014}
+% \textbf{\href{http://security-class.gr/}{Security-class}}. 10-hour seminar.\\
+% \location{2010}
+% \textbf{\href{https://web-class.gr/}{Web-class}}. 50-hour seminar.\\
+% \sectionsep
+%
+\subsection{Olympiad Coaching}
+\cvitem[2pt]{2017}{Balkan Olympiad in Informatics}
+\cvitem[2pt]{2012, 2015}{Junior Balkan Olympiad in Informatics}
+\cvitem[2pt]{2010--12, 2015--16}{National Greek Olympiad in Informatics}
+
+\iflong
+\section{Advised Students}
+\else
+\section{Selected Students Advised}
+\fi
+\cvitem[2pt]{MEng Thesis '19}{Kostis Karantias, \textit{\href{https://gtklocker.com/thesis.pdf}{Enabling NIPoPoW Applications on Bitcoin Cash}}}
+\iflong
+\cvitem[2pt]{MSc Thesis '19}{Orestis Konstantinidis, \textit{Monero Mining: CryptoNight Analysis}}
+\fi
+\cvitem[2pt]{BSc Thesis '18}{Roman Brunner, \textit{Structure and Content of the Visible Darknet}}
+\cvitem[2pt]{MEng Thesis '18}{Giorgos Christoglou, \textit{Enabling crosschain transactions using NIPoPoWs}}
+\cvitem[2pt]{BSc Thesis '18}{Dimitris Grigoriou, \textit{Extending the Rupture Compression Attack Framework Against Real World Systems}}
+\iflong
+\cvitem[2pt]{BSc Thesis '17}{Christos Porios, \textit{A bcoin.js Implementation of Trust-is-Risk}}
+\fi
+\cvitem[2pt]{MEng Thesis '17}{Orfeas Stefanos Thyfronitis Litos, \textit{Trust is Risk}}
+\cvitem[2pt]{MEng Thesis '17}{Eva Sarafianou, \textit{Tool implementation for conducting cryptographic compression side channel attacks against the TLS protocol}}
+\cvitem[2pt]{MEng Thesis '16}{Dimitris Karakostas, \textit{Optimizations on Compression--Encryption Attacks against TLS}}
+\iflong
+\cvitem[2pt]{MEng Thesis '16}{Konstantinos Andrikopoulos \& Dimitris Kolotouros, \textit{Implementation of a Multi-Party Off-the-Record Messaging Protocol}}
+\fi
+
 % Publications from a BibTeX file using the multibib package
-\section{Publications}
-\cvitem{[ToN'19]}{%
-\textit{Network Transparency for Better Internet Security}\newline{}%
-{\color[rgb]{0.7,0.7,0.7}{\color{black}Christos Pappas}, Taeho Lee, Raphael M. Reischuk, Pawel Szalachowski, Adrian Perrig}\newline{}%
-Transactions on Networking, 2019%
+\section{Selected Invited Talks}
+\cvitem{}{%
+\begin{itemize}
+\item \href{https://rwc.iacr.org/2017/Slides/eva.sarafianou.pdf}{Productizing TLS
+Attacks: The Rupture API}\newline{}{\color[rgb]{0.7,0.7,0.7}Aggelos Kiayias, Eva Sarafianou, {\color{black}Dionysis Zindros}}
+	\begin{itemize}
+		\item Real World Crypto Symposium, Columbia University, New York City, USA, 2017
+	\end{itemize}
+\end{itemize}
 }
-\cvitem{[SIGMETRICS'19]}{%
-\textit{Retro-active Packet Sampling}\newline{}%
-{\color[rgb]{0.7,0.7,0.7}Pavlos Nikolopoulos, {\color{black}Christos Pappas}, Katerina Argyraki, Adrian Perrig}\newline{}%
-Measurement and Analysis of Computing Systems - SIGMETRICS%
+
+\iflong
+\vspace{-10pt}
+\cvitem{}{%
+\begin{itemize}
+\item \href{https://www.youtube.com/watch?v=ibkgen3bd80}{Writing Smart Contracts}
+	\begin{itemize}
+	\item Smart Contracts Day, Athens, Greece, 2017
+	\end{itemize}
+\end{itemize}
 }
-\cvitem{[HotNets'18]}{%
-\textit{Networking, in Heaven as on Earth}\newline{}%
-{\color[rgb]{0.7,0.7,0.7}Tobias Klenze, Giacomo Giuliari, {\color{black}Christos Pappas}, Adrian Perrig, David Basin}\newline{}%
-Workshop on Hot Topics in Networking, Redmond, USA, 2018%
+\fi
+
+\vspace{-10pt}
+\cvitem{}{%
+\begin{itemize}
+\item \href{https://rwc.iacr.org/2016/Slides/New\%20developments\%20on\%20BREACH.pdf}{New developments in BREACH}\newline{}
+  {\color[rgb]{0.7,0.7,0.7}Dimitris Karakostas, Aggelos Kiayias, {\color{black}Dionysis Zindros}}
+	\begin{itemize}
+		\item Real World Crypto Symposium, Stanford University, USA, 2016
+	\end{itemize}
+\end{itemize}
 }
-\cvitem{[CCR'18]}{%
-\textit{Bootstrapping Privacy Services in Today's Internet}\newline{}%
-{\color[rgb]{0.7,0.7,0.7}Taeho Lee, {\color{black}Christos Pappas}, Adrian Perrig}\newline{}%
-SIGCOMM Computer Communication Review, 2018%
+
+\iflong
+\vspace{-10pt}
+\cvitem{}{%
+\begin{itemize}
+\item Rupture: Automating cryptanalysis of HTTPS for AES ciphers\newline{}
+  {\color[rgb]{0.7,0.7,0.7}Dimitris Karakostas, Eva Sarafianou, {\color{black}Dionysis Zindros}}
+	\begin{itemize}
+		\item BSides, Athens, Greece, 2016
+	\end{itemize}
+\end{itemize}
 }
-\cvitem{[AsiaCCS'18]}{%
-\textit{Towards Sustainable Evolution for the TLS Public-Key Infrastructure}\newline{}%
-{\color[rgb]{0.7,0.7,0.7}Taeho Lee, {\color{black}Christos Pappas}, Pawel Szalachowski, Adrian Perrig}\newline{}%
-Asia Conference on Computer Communications and Security, Songdo, S.Korea, 2018%
+\fi
+
+\iflong
+\vspace{-10pt}
+\cvitem{}{%
+\begin{itemize}
+\item Lightning Talk: OpenBazaar\newline{}
+  {\color[rgb]{0.7,0.7,0.7}Brian Hoffman, Angel Leon, Samuel Patterson, {\color{black}Dionysis Zindros}}
+	\begin{itemize}
+	\item FOSDEM, Brussels, Belgium, 2015
+	\end{itemize}
+\end{itemize}
 }
-\cvitem{[PhD Diss.'17]}{%
-\textit{Bootstrapping Transparency for Internet Communication}\newline{}%
-{\color{black}Christos Pappas, PhD Dissertation, 2017}\newline{}%
+\fi
+
+\iflong
+\vspace{-10pt}
+\cvitem{}{%
+\begin{itemize}
+\item \href{https://www.youtube.com/watch?v=0UfxGgoSaHc}{HTTPS BREACH}
+\begin{itemize}
+	\item Keynote speaker, ECESCON, Thessaloniki, Greece 2014
+	\end{itemize}
+\end{itemize}
 }
-\vspace{-8pt}
-\cvitem{[AsiaCCS'17]}{%
-\textit{The Case for In-Network Replay Suppression}\newline{}%
-{\color[rgb]{0.7,0.7,0.7}Taeho Lee, {\color{black}Christos Pappas}, Adrian Perrig, Virgil Gligor, Yih-Chun Hu}\newline{}%
-Asia Conference on Computer Communications and Security, Abu Dhabi, UAE, 2017%
+\fi
+
+\iflong
+\vspace{-10pt}
+\cvitem{}{%
+\begin{itemize}
+\item Bitcoin, an overview % https://www.youtube.com/watch?v=khdTRJMN9fQ
+	\begin{itemize}
+	\item TEDxYouth, Ioannina, Greece, 2013
+	\item Greek Departmnent of Defence Conference, Athens, Greece, 2012
+	\end{itemize}
+\end{itemize}}
+\fi
+
+\iflong
+\vspace{-10pt}
+\cvitem{}{%
+\begin{itemize}
+\item \href{https://github.com/dionyziz/webgl-seminar}{An introduction to WebGL}
+	\begin{itemize}
+	\item OpenFest, Patras, Greece, 2011
+	\item \href{http://webseminars.ee.auth.gr/\#lectures}{AUTH}, Thessaloniki, Greece, 2011
+	\end{itemize}
+\end{itemize}
 }
-\vspace{2pt}
-\cvitem{[CoNEXT'16]}{%
-\textit{Source Accountability with Domain-brokered Privacy}\newline{}%
-{\color[rgb]{0.7,0.7,0.7}Taeho Lee, {\color{black}Christos Pappas}, David Barrera, Pawel Szalachowski, Adrian Perrig}\newline{}%
-Int. Conference on emerging Networking EXperiments and Technologies, Irvine, USA, 2016%
-}
-\vspace{2pt}
-\cvitem{[ICNP'16]}{%
-\textit{Communication Based on Per-Packet One-Time Addresses}\newline{}%
-{\color[rgb]{0.7,0.7,0.7}Taeho Lee, {\color{black}Christos Pappas}, Pawel Szalachowski, Adrian Perrig}\newline{}%
-International Conference on Network Protocols, Singapore, 2016%
-}
-\vspace{2pt}
-\cvitem{[ICCCN'16]}{%
-\textit{SDNsec: Forwarding Accountability for the SDN Data Plane}\newline{}%
-{\color[rgb]{0.7,0.7,0.7}Takayuki Sasaki, {\color{black}Christos Pappas}, Taeho Lee, Torsten Hoefler, Adrian Perrig}\newline{}%
-Int. Conference on Computer Communication and Networks 2016, Hawaii, USA, 2016%
-}
-\vspace{2pt}
-\cvitem{[APCC'16]}{%
-\textit{On the Implementation of Path-Based Dynamic Pricing in Edge-Directed Routing}\newline{}%
-{\color[rgb]{0.7,0.7,0.7}Jumpei Urakawa, Cristina Basescu, Kohei Sugiyama, {\color{black}Christos Pappas}, Akira Yamada, et al.}\newline{}%
-Asia-Pacific Conference on Communications, Yogyakarta, Indonesia, 2016%
-}
-\vspace{2pt}
-\cvitem{[HotNets'15]}{%
-\textit{Transparency Instead of Neutrality}\newline{}%
-{\color[rgb]{0.7,0.7,0.7}{\color{black}Christos Pappas}, Katerina Argyraki, Stefan Bechtold, Adrian Perrig}\newline{}%
-Workshop on Hot Topics in Networking, Philadelphia, USA, 2015%
-}
-\vspace{2pt}
-\cvitem{[ICNP'15]}{%
-\textit{FAIR: Forwarding Accountability for Internet Reputability}\newline{}%
-{\color[rgb]{0.7,0.7,0.7}{\color{black}Christos Pappas}, Raphael M. Reischuk, Adrian Perrig}\newline{}%
-International Conference on Network Protocols, San Francisco, USA, 2015%
-}
-\vspace{2pt}
-\cvitem{[iNetSec'15]}{%
-\textit{Forwarding Accountability: A Challenging Necessity of the Future Data Plane}\newline{}%
-{\color[rgb]{0.7,0.7,0.7}{\color{black}Christos Pappas}, Raphael M. Reischuk, Adrian Perrig}\newline{}%
-Open Research Problems in Network Security, Z\"urich, Switzerland, 2015%
-}
-\vspace{2pt}
-\cvitem{[CFI'15]}{%
-\textit{Source-Based Path Selection: The Data Plane Perspective}\newline{}%
-{\color[rgb]{0.7,0.7,0.7}Taeho Lee, {\color{black}Christos Pappas}, Cristina Basescu, Jun Han, Torsten Hoefler, Adrian Perrig}\newline{}%
-International Conference on Future Internet Technologies, Seoul, S. Korea, 2015%
-}
-\vspace{2pt}
-\cvitem{[ADHOC'13]}{%
-\textit{Design and Assessment of a Reputation-Based Trust Framework in Wireless Testbeds Utilizing User Experience}\newline{}%
-{\color[rgb]{0.7,0.7,0.7}Aggelos Kapoukakis, {\color{black}Christos Pappas}, Georgios Androulidakis, Symeon Papavassiliou}\newline{}%
-ADHOC-NOW, Wroclaw, Poland, 2013%
-}
+\fi
+
+\section{Skills}
+\cvitem[2pt]{Human Languages}{English (Proficient), Greek (Native)}
+\cvitem[2pt]{Prog. Languages}{Python, JavaScript, TypeScript, C/C++, PHP, MySQL}
+% HTML5/CSS3, Pascal, Haskell, Prolog, LaTeX, Java, Scheme, Scala, Ruby
+\cvitem[2pt]{Other}{Git, vim, TLS, OpenGL/WebGL, IRC, Linux Administration (Debian, Arch, Gentoo)}
+
+\iflong
+\section{Honors \& Awards}
+\cvitem[2pt]{2017--2020}{IOHK Junior Research Fellowship}
+\cvitem[2pt]{2006}{Balkan Olympiad in Informatics Bronze Medal}
+\fi
+% \cvitem[2pt]{2006}{International Olympiad in Informatics Participation}
+
 %\nocitebook{book1,book2}
 %\bibliographystylebook{plain}
 %\bibliographybook{pubs}                   % 'publications' is the name of a BibTeX file
