@@ -60,16 +60,19 @@ Nationality: Greek}                 % optional, remove / comment the line if not
 \begin{document}
 %\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
-%\vspace{-50pt}
+% \vspace{-220pt}
 \makecvtitle
-%\vspace{-20pt}
+\vspace{-25pt}
 \section{Education}
-\cventry[8pt]{2015--Mar 2020 (expected)}{PhD in Computer Science}{University of Athens}{Greece}{}{%
-Research Areas: Cryptography, Blockchains
-\\Dissertation: \textit{Decentralized Blockchain Interoperability}\newline{}
+\cventry[8pt]{2015--2020}{PhD in Computer Science}{Department of Informatics, University of Athens}{Greece}{}{%
+% XXX optimally  change line above from "Computer Science" to "Cryptography" and remove line below to save space
+Research Areas: Cryptography, Blockchains\\
+Dissertation: \textit{Decentralized Blockchain Interoperability}\newline{}
 Advised by Prof.~Aggelos Kiayias
 }  % arguments 3 to 6 can be left empty
-\cventry[8pt]{2008--2015}{MEng Electrical \& Computer Engineering}{National Technical University of Athens}{Greece}{}{Specialization: Security \& Cryptography \\ Thesis: \href{https://dionyziz.com/pseudonymous-trust-2.pdf}{\textit{Creating OpenBazaar: Trust in Decentralized Anonymous Marketplaces}}\newline{}
+\cventry[8pt]{2008--2015}{MEng Electrical \& Computer Engineering}{National Technical University of Athens}{Greece}{}{
+% Specialization: Security \& Cryptography \\
+Thesis: \href{https://dionyziz.com/pseudonymous-trust-2.pdf}{\textit{Creating OpenBazaar: Trust in Decentralized Anonymous Marketplaces}}\newline{}
 Advised by Prof.~Aris Pagourtzis}
 
 %\vspace{5pt}
@@ -79,7 +82,7 @@ Improved corporate security by building forensics and security tools used by the
 %
 }
 \cventry[8pt]{2013--2014}{Product Security Intern}{Twitter}{San Francisco}{USA}{%
-Successfully identified vulnerable end-points and recommended mitigations in the areas of web security, particularly \href{http://breachattack.com/}{BREACH} and \href{https://developer.mozilla.org/en-US/docs/Security/CSP}{CSP}.
+Identified vulnerable end-points and recommended mitigations in the areas of web security, particularly \href{http://breachattack.com/}{BREACH} and \href{https://developer.mozilla.org/en-US/docs/Security/CSP}{CSP}.
 %
 }
 \cventry[8pt]{2010--2011}{Co-Founder, Technical Lead}{Kamibu}{Athens}{Greece}{%
@@ -91,14 +94,14 @@ WebGL-based game engine.% (\href{https://github.com/kamibu/finalengine}{Source})
 
 \cventry[8pt]{2006--2008}{Backend Software Engineer}{deviantART}{Los Angeles, USA}{}{%
 Community with 50,000,000 daily hits, 15,000,000 users.
-Wrote 200,000 of PHP and 5,000 of SQL back-end code.
-Leveraged memcached, sharding and partitioning to improve application performance and scalability.
+Wrote 200,000 lines of PHP and 5,000 of SQL backend code.
+Leveraged memcached, sharding and partitioning to improve performance and scalability.
 }
 
 \urlstyle{same}
 \cventry[8pt]{2005--2010}{Co-Founder, Technical Lead}{Zino}{Athens}{Greece}{%
-Co-founded ``Zino'', a social network in Greece with over 20,000 members.
-Created over 300,000 lines of PHP, Javascript, HTML/CSS, XML/XSLT code and supervised 4 - 5 programmers.
+Co-founded ``Zino'', a Greek social network with over 20,000 members.
+Created over 300,000 lines of PHP, Javascript, HTML/CSS, XML/XSLT code and supervised 5 programmers.
 %\\GitHub Repository: \url{https://github.com/dionyziz/zino}
 }
 %\cventry[10pt]{2006--2007}{Software Engineer}{Shmmy}{Athens}{Greece}{%
@@ -114,15 +117,42 @@ Created over 300,000 lines of PHP, Javascript, HTML/CSS, XML/XSLT code and super
 \else
 \section{Selected Publications}
 \fi
+\cvitem{[AFT'20]}{%
+\textit{A Gas-Efficient Superlight Bitcoin Client in Solidity}\newline{}%
+{\color[rgb]{0.7,0.7,0.7}
+Stelios Daveas, Kostis Karantias, Aggelos Kiayias, {\color{black}Dionysis Zindros}
+}\newline{}%
+To appear in ACM Advances in Financial Technologies 2020%
+}
+\cvitem{[ESORICS'20]}{%
+\textit{Updatable Blockchains}\newline{}%
+{\color[rgb]{0.7,0.7,0.7}
+Michele Ciampi, Nikos Karayannidis, Aggelos Kiayias, {\color{black}Dionysis Zindros}
+}\newline{}%
+To appear in ESORICS 2020%
+}
 \cvitem{[FC'20]}{%
 \textit{\href{https://eprint.iacr.org/2017/963.pdf}{Non-Interactive Proofs of Proof-of-Work}}\newline{}%
 {\color[rgb]{0.7,0.7,0.7}Aggelos Kiayias, Andrew Miller, {\color{black}Dionysis Zindros}}\newline{}%
-To appear in Financial Cryptography and Data Security, Malaysia, 2020%
+Financial Cryptography and Data Security, Malaysia, 2020%
 }
 \cvitem{[FC'20]}{%
 \textit{\href{https://eprint.iacr.org/2019/1096.pdf}{Proof-of-Burn}}\newline{}%
-{\color[rgb]{0.7,0.7,0.7}Kostis Karantias, {\color{black}Dionysis Zindros}, Aggelos Kiayias}\newline{}%
-To appear in Financial Cryptography and Data Security, Malaysia, 2020%
+{\color[rgb]{0.7,0.7,0.7}Kostis Karantias, Aggelos Kiayias, {\color{black}Dionysis Zindros}}\newline{}%
+Financial Cryptography and Data Security, Malaysia, 2020%
+}
+\cvitem{[MARBLE'20]}{%
+\textit{\href{https://eprint.iacr.org/2020/138.pdf}{Smart Contract Derivatives}}\newline{}%
+{\color[rgb]{0.7,0.7,0.7}Kostis Karantias, Aggelos Kiayias, {\color{black}Dionysis Zindros}}\newline{}%
+Mathematical Research for Blockchain Economy, Vilamura, Portugal, 2020%
+}
+\vspace{2pt}
+\cvitem{arXiv Preprint 2018}{%
+\textit{\href{https://arxiv.org/pdf/1905.11360}{Brick: Asynchronous Payment Channels}}\newline{}%
+{\color[rgb]{0.7,0.7,0.7}Georgia Avarikioti, Eleftherios Kokoris Kogias, Roger Wattenhofer,
+{\color{black}Dionysis Zindros}}
+%\newline{}%
+% arXiv, 2018%
 }
 \cvitem{[S\&P'19]}{%
 \textit{\href{https://eprint.iacr.org/2018/1239.pdf}{Proof-of-Stake Sidechains}}\newline{}%
@@ -142,25 +172,23 @@ International Conference on Blockchain Economics, Security and Protocols, Paris,
 }
 \cvitem{[MARBLE'19]}{%
 \textit{Compact Storage of Superblocks for NIPoPoW Applications}\newline{}%
-{\color[rgb]{0.7,0.7,0.7}Kostis Karantias, Aggelos Kiayias, {\color{black}Dionysis Zindros}}\newline{}%
+{\color[rgb]{0.7,0.7,0.7}Kostis Karantias, Aggelos Kiayias, Nikos Leonardos, {\color{black}Dionysis Zindros}}\newline{}%
 Mathematical Research for Blockchain Economy, Santorini, Greece, 2019%
 \iflong\newline
 Nominated for Best Paper Award%
 \fi
 }
-\iflong
 \cvitem{ePrint Preprint 2019}{%
 \textit{\href{https://pdfs.semanticscholar.org/e982/1e278efb615ded08c51aa6f7315d00e3841c.pdf}{SoK: Communication Across Distributed Ledgers}}\newline{}%
 {\color[rgb]{0.7,0.7,0.7}Alexei Zamyatin, Mustafa Al-Bassam, {\color{black}Dionysis Zindros}, Eleftherios Kokoris-Kogias,\newline{}Pedro Moreno-Sanchez, Aggelos Kiayias, William J Knottenbelt}
 %\newline{}%
 % ePrint Archive, 2019%
 }
-\fi
 \iflong
 \vspace{2pt}
 \cvitem{arXiv Preprint 2018}{%
 \textit{\href{https://arxiv.org/pdf/1811.01348}{Structure and Content of the Visible Darknet}}\newline{}%
-{\color[rgb]{0.7,0.7,0.7}Georgia Avarikioti, Roman Brunner, Aggelos Kiayias, Roger Wattenhofer, {\color{black}Dionysis Zindros}}
+{\color[rgb]{0.7,0.7,0.7}Zeta Avarikioti, Roman Brunner, Aggelos Kiayias, Roger Wattenhofer, {\color{black}Dionysis Zindros}}
 %\newline{}%
 % arXiv, 2018%
 }
@@ -194,25 +222,11 @@ National Technical University of Athens MEng Thesis, 2016
 }
 \fi
 
-%\vspace{5pt}
-%\newpage
-%\section{Interests}
-%\cvitem{hobby 1}{Description}
-%\cvitem{hobby 2}{Description}
-%\cvitem{hobby 3}{Description}
-
-% Publications from a BibTeX file without multibib
-%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
-%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
-%\nocite{*}
-%\bibliographystyle{plain}
-%\bibliography{pubs}                        % 'publications' is the name of a BibTeX file
-
 \section{Teaching}
 \subsection{Lecturing}
 \iflong
 \cventry[8pt]{Spring 2019}{Blockchain Science and Engineering}{University of Athens}{Greece}{}{%
-Prof. Aggelos Kiayias. Additional Lecturing: Christos Nasikas, Dionysis Zindros\newline{}
+Prof. Aggelos Kiayias. Additional Lecturing: {\color[rgb]{0.7,0.7,0.7}Christos Nasikas,} Dionysis Zindros\newline{}
 Graduate Course, Department of Computer Science
 }
 
@@ -222,14 +236,14 @@ Undergraduate and Graduate Courses, Department of Computer Science
 }
 
 \cventry[8pt]{Spring 2016}{Security of Computer Systems}{University of Athens}{Greece}{}{%
-Prof. Aggelos Kiayias. Additional Lecturing: Yannis Tselekounis, Dionysis Zindros\newline{}
+Prof. Aggelos Kiayias. Additional Lecturing: {\color[rgb]{0.7,0.7,0.7}Yannis Tselekounis,} Dionysis Zindros\newline{}
 Undergraduate and Graduate Courses, Department of Computer Science
 }
 
 \cventry[8pt]{Fall 2015}{Cryptography}{National Technical University of Athens}{Greece}{}{%
 Prof. Aris Pagourtzis \& Stathis Zachos\newline{}
-Additional Lecturing: Antonis Antonopoulos, Panagiotis Grontas,
-Petros Potikas, Dionysis Zindros\newline{}
+Additional Lecturing: {\color[rgb]{0.7,0.7,0.7}Antonis Antonopoulos, Panagiotis Grontas,
+Petros Potikas,} Dionysis Zindros\newline{}
 Undergraduate Course, Department of Computer Engineering
 }
 
@@ -248,16 +262,16 @@ Petros Angelatos, Dionysis Zindros\newline{}
 \iflong
 \iflong
 \cventry[8pt]{Fall 2014}{Cryptography}{National Technical University of Athens}{Greece}{}{%
-Prof. Aris Pagourtzis \& Stathis Zachos\newline{}
+% Prof. Aris Pagourtzis \& Stathis Zachos\newline{}
 Undergraduate Course, Department of Electrical \& Computer Engineering
 }
 \fi
 \cventry[8pt]{Fall 2012}{Algorithms and Complexity}{National Technical University of Athens}{Greece}{}{%
-Prof. Dimitris Fotakis \& Stathis Zachos\newline{}
+% Prof. Dimitris Fotakis \& Stathis Zachos\newline{}
 Undergraduate Course, Department of Electrical \& Computer Engineering
 }
 \cventry[8pt]{Spring 2011}{Discrete Mathematics}{National Technical University of Athens}{Greece}{}{%
-Prof. Foto Afrati \& Dimitris Fotakis\newline{}
+% Prof. Foto Afrati \& Dimitris Fotakis\newline{}
 Undergraduate Course, Department of Electrical \& Computer Engineering
 }
 \else
@@ -282,17 +296,19 @@ Undergraduate Course, Department of Electrical \& Computer Engineering
 \cvitem[2pt]{2010--12, 2015--16}{National Greek Olympiad in Informatics}
 
 \iflong
-\section{Advised Students}
+\section{Selected Students Advised}
 \else
 \section{Selected Students Advised}
 \fi
+\cvitem[2pt]{MSc Thesis '20}{Andrianna Polydouri, \textit{Non-Interactive Proofs of Proof-of-Work under Velvet Forks}}
+\cvitem[2pt]{MSc Thesis '20}{Stelios Daveas, \textit{\href{https://github.com/sdaveas/nipopow-verifier}{Gas-Efficient Verification of Non-Interactive Proofs of Proof-of-Work}}}
 \cvitem[2pt]{MEng Thesis '19}{Kostis Karantias, \textit{\href{https://gtklocker.com/thesis.pdf}{Enabling NIPoPoW Applications on Bitcoin Cash}}}
 \iflong
-\cvitem[2pt]{MSc Thesis '19}{Orestis Konstantinidis, \textit{Monero Mining: CryptoNight Analysis}}
+% \cvitem[2pt]{MSc Thesis '19}{Orestis Konstantinidis, \textit{Monero Mining: CryptoNight Analysis}}
 \fi
 \cvitem[2pt]{BSc Thesis '18}{Roman Brunner, \textit{Structure and Content of the Visible Darknet}}
 \cvitem[2pt]{MEng Thesis '18}{Giorgos Christoglou, \textit{Enabling crosschain transactions using NIPoPoWs}}
-\cvitem[2pt]{BSc Thesis '18}{Dimitris Grigoriou, \textit{Extending the Rupture Compression Attack Framework Against Real World Systems}}
+\cvitem[2pt]{BSc Thesis '18}{Dimitris Grigoriou, \textit{Extending Compression Attack Frameworks Against Real Systems}}
 \iflong
 \cvitem[2pt]{BSc Thesis '17}{Christos Porios, \textit{A bcoin.js Implementation of Trust-is-Risk}}
 \fi
@@ -300,11 +316,34 @@ Undergraduate Course, Department of Electrical \& Computer Engineering
 \cvitem[2pt]{MEng Thesis '17}{Eva Sarafianou, \textit{Tool implementation for conducting cryptographic compression side channel attacks against the TLS protocol}}
 \cvitem[2pt]{MEng Thesis '16}{Dimitris Karakostas, \textit{Optimizations on Compression--Encryption Attacks against TLS}}
 \iflong
-\cvitem[2pt]{MEng Thesis '16}{Konstantinos Andrikopoulos \& Dimitris Kolotouros, \textit{Implementation of a Multi-Party Off-the-Record Messaging Protocol}}
+% \cvitem[2pt]{MEng Thesis '16}{Konstantinos Andrikopoulos \& Dimitris Kolotouros, \textit{Implementation of a Multi-Party Off-the-Record Messaging Protocol}}
 \fi
 
 % Publications from a BibTeX file using the multibib package
 \section{Selected Invited Talks}
+\iflong
+\cvitem{}{%
+\begin{itemize}
+\item Mining in Logarithmic Space\newline{}
+  {\color[rgb]{0.7,0.7,0.7}Aggelos Kiayias, Nikos Leonardos, {\color{black}Dionysis Zindros}}
+	\begin{itemize}
+	\item ATHECRYPT, Athens, Greece, 2020
+	\end{itemize}
+\end{itemize}}
+\fi
+
+\iflong
+\vspace{-10pt}
+\cvitem{}{%
+\begin{itemize}
+\item Proofs of Proof-of-Work: Overview and Research Directions
+	\begin{itemize}
+	\item ATHECRYPT, Athens, Greece, 2018
+	\end{itemize}
+\end{itemize}}
+\fi
+
+\vspace{-10pt}
 \cvitem{}{%
 \begin{itemize}
 \item \href{https://rwc.iacr.org/2017/Slides/eva.sarafianou.pdf}{Productizing TLS
@@ -315,18 +354,18 @@ Attacks: The Rupture API}\newline{}{\color[rgb]{0.7,0.7,0.7}Aggelos Kiayias, Eva
 \end{itemize}
 }
 
-\iflong
-\vspace{-10pt}
-\cvitem{}{%
-\begin{itemize}
-\item \href{https://www.youtube.com/watch?v=ibkgen3bd80}{Writing Smart Contracts}
-	\begin{itemize}
-	\item Smart Contracts Day, Athens, Greece, 2017
-	\end{itemize}
-\end{itemize}
-}
-\fi
-
+% \iflong
+% \vspace{-10pt}
+% \cvitem{}{%
+% \begin{itemize}
+% \item \href{https://www.youtube.com/watch?v=ibkgen3bd80}{Writing Smart Contracts}
+% 	\begin{itemize}
+% 	\item Smart Contracts Day, Athens, Greece, 2017
+% 	\end{itemize}
+% \end{itemize}
+% }
+% \fi
+%
 \vspace{-10pt}
 \cvitem{}{%
 \begin{itemize}
@@ -338,31 +377,31 @@ Attacks: The Rupture API}\newline{}{\color[rgb]{0.7,0.7,0.7}Aggelos Kiayias, Eva
 \end{itemize}
 }
 
-\iflong
-\vspace{-10pt}
-\cvitem{}{%
-\begin{itemize}
-\item Rupture: Automating cryptanalysis of HTTPS for AES ciphers\newline{}
-  {\color[rgb]{0.7,0.7,0.7}Dimitris Karakostas, Eva Sarafianou, {\color{black}Dionysis Zindros}}
-	\begin{itemize}
-		\item BSides, Athens, Greece, 2016
-	\end{itemize}
-\end{itemize}
-}
-\fi
+% \iflong
+% \vspace{-10pt}
+% \cvitem{}{%
+% \begin{itemize}
+% \item Rupture: Automating cryptanalysis of HTTPS for AES ciphers\newline{}
+%   {\color[rgb]{0.7,0.7,0.7}Dimitris Karakostas, Eva Sarafianou, {\color{black}Dionysis Zindros}}
+% 	\begin{itemize}
+% 		\item BSides, Athens, Greece, 2016
+% 	\end{itemize}
+% \end{itemize}
+% }
+% \fi
 
-\iflong
-\vspace{-10pt}
-\cvitem{}{%
-\begin{itemize}
-\item Lightning Talk: OpenBazaar\newline{}
-  {\color[rgb]{0.7,0.7,0.7}Brian Hoffman, Angel Leon, Samuel Patterson, {\color{black}Dionysis Zindros}}
-	\begin{itemize}
-	\item FOSDEM, Brussels, Belgium, 2015
-	\end{itemize}
-\end{itemize}
-}
-\fi
+% \iflong
+% \vspace{-10pt}
+% \cvitem{}{%
+% \begin{itemize}
+% \item Lightning Talk: OpenBazaar\newline{}
+%   {\color[rgb]{0.7,0.7,0.7}Brian Hoffman, Angel Leon, Samuel Patterson, {\color{black}Dionysis Zindros}}
+% 	\begin{itemize}
+% 	\item FOSDEM, Brussels, Belgium, 2015
+% 	\end{itemize}
+% \end{itemize}
+% }
+% \fi
 
 \iflong
 \vspace{-10pt}
@@ -376,31 +415,43 @@ Attacks: The Rupture API}\newline{}{\color[rgb]{0.7,0.7,0.7}Aggelos Kiayias, Eva
 }
 \fi
 
-\iflong
-\vspace{-10pt}
-\cvitem{}{%
-\begin{itemize}
-\item Bitcoin, an overview % https://www.youtube.com/watch?v=khdTRJMN9fQ
-	\begin{itemize}
-	\item TEDxYouth, Ioannina, Greece, 2013
-	\item Greek Departmnent of Defence Conference, Athens, Greece, 2012
-	\end{itemize}
-\end{itemize}}
-\fi
+% \iflong
+% \vspace{-10pt}
+% \cvitem{}{%
+% \begin{itemize}
+% \item Bitcoin, an overview % https://www.youtube.com/watch?v=khdTRJMN9fQ
+% 	\begin{itemize}
+% 	\item TEDxYouth, Ioannina, Greece, 2013
+% 	\item Greek Departmnent of Defence Conference, Athens, Greece, 2012
+% 	\end{itemize}
+% \end{itemize}}
+% \fi
 
-\iflong
-\vspace{-10pt}
-\cvitem{}{%
-\begin{itemize}
-\item \href{https://github.com/dionyziz/webgl-seminar}{An introduction to WebGL}
-	\begin{itemize}
-	\item OpenFest, Patras, Greece, 2011
-	\item \href{http://webseminars.ee.auth.gr/\#lectures}{AUTH}, Thessaloniki, Greece, 2011
-	\end{itemize}
-\end{itemize}
-}
-\fi
+% \iflong
+% \vspace{-10pt}
+% \cvitem{}{%
+% \begin{itemize}
+% \item Monero: An overview
+% 	\begin{itemize}
+% 	\item ATHECRYPT, Athens, Greece, 2016
+% 	\end{itemize}
+% \end{itemize}}
+% \fi
 
+% \iflong
+% \vspace{-10pt}
+% \cvitem{}{%
+% \begin{itemize}
+% \item \href{https://github.com/dionyziz/webgl-seminar}{An introduction to WebGL}
+% 	\begin{itemize}
+% 	\item OpenFest, Patras, Greece, 2011
+% 	\item \href{http://webseminars.ee.auth.gr/\#lectures}{AUTH}, Thessaloniki, Greece, 2011
+% 	\end{itemize}
+% \end{itemize}
+% }
+% \fi
+
+\vspace{-10pt}
 \section{Skills}
 \cvitem[2pt]{Human Languages}{English (Proficient), Greek (Native)}
 \cvitem[2pt]{Prog. Languages}{Python, JavaScript, TypeScript, C/C++, PHP, MySQL}
@@ -411,6 +462,12 @@ Attacks: The Rupture API}\newline{}{\color[rgb]{0.7,0.7,0.7}Aggelos Kiayias, Eva
 \section{Honors \& Awards}
 \cvitem[2pt]{2017--2020}{IOHK Junior Research Fellowship}
 \cvitem[2pt]{2006}{Balkan Olympiad in Informatics Bronze Medal}
+\fi
+
+\iflong
+\section{Community Service}
+\cvitem[2pt]{Program Commitee}{Cryptoeconomic Systems 2020, MARBLE 2020, FC WTSC 2020, IEEE Blockchain 2018}
+\cvitem[2pt]{Subreviewer}{CCS 2020, S\&P 2020, CCS 2019, S\&P 2019, TCC 2018, PoPETs 2018, FC BITCOIN 2018, CANS 2017, FC 2017, PoPETs 2017, EUROCRYPT 2016, DCCL 2016}
 \fi
 % \cvitem[2pt]{2006}{International Olympiad in Informatics Participation}
 
