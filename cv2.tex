@@ -58,7 +58,12 @@
 \setlength\tabcolsep{6pt}
 
 \newif \iflong
+\newif \ifshort
+% 3 pages = \longtrue
+% 2 pages = no ifs
+% 1 page = \shorttrue
 \longtrue
+% \shorttrue
 \begin{document}
 %\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
@@ -66,16 +71,30 @@
 \makecvtitle
 \vspace{-25pt}
 \section{Education}
+\ifshort
+\cventry[2pt]{2015--2020}{PhD in Computer Science}{Department of Informatics, University of Athens}{Greece}{}{%
+% XXX optimally  change line above from "Computer Science" to "Cryptography" and remove line below to save space
+Dissertation: \href{https://dionyziz.com/thesis.pdf}{\textit{Decentralized Blockchain Interoperability}}\newline{}
+Advised by Prof.~Aggelos Kiayias
+}  % arguments 3 to 6 can be left empty
+\else
 \cventry[8pt]{2015--2020}{PhD in Computer Science}{Department of Informatics, University of Athens}{Greece}{}{%
 % XXX optimally  change line above from "Computer Science" to "Cryptography" and remove line below to save space
 Research Areas: Cryptography, Blockchains\\
 Dissertation: \textit{Decentralized Blockchain Interoperability}\newline{}
 Advised by Prof.~Aggelos Kiayias
 }  % arguments 3 to 6 can be left empty
+\fi
+\ifshort
+\cventry[2pt]{2008--2015}{MEng Electrical \& Computer Engineering}{National Technical University of Athens}{Greece}{}{
+% Specialization: Security \& Cryptography \\
+}
+\else
 \cventry[8pt]{2008--2015}{MEng Electrical \& Computer Engineering}{National Technical University of Athens}{Greece}{}{
 % Specialization: Security \& Cryptography \\
 Thesis: \href{https://dionyziz.com/pseudonymous-trust-2.pdf}{\textit{Creating OpenBazaar: Trust in Decentralized Anonymous Marketplaces}}\newline{}
 Advised by Prof.~Aris Pagourtzis}
+\fi
 
 %\vspace{5pt}
 \section{Professional Experience}
