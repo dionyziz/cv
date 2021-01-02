@@ -81,7 +81,7 @@ Advised by Prof.~Aggelos Kiayias
 \cventry[8pt]{2015--2020}{PhD in Computer Science}{Department of Informatics, University of Athens}{Greece}{}{%
 % XXX optimally  change line above from "Computer Science" to "Cryptography" and remove line below to save space
 Research Areas: Cryptography, Blockchains\\
-Dissertation: \textit{Decentralized Blockchain Interoperability}\newline{}
+Dissertation: \href{https://dionyziz.com/thesis.pdf}{\textit{Decentralized Blockchain Interoperability}}\newline{}
 Advised by Prof.~Aggelos Kiayias
 }  % arguments 3 to 6 can be left empty
 \fi
@@ -98,20 +98,41 @@ Advised by Prof.~Aris Pagourtzis}
 
 %\vspace{5pt}
 \section{Professional Experience}
+\ifshort
+\cventry[2pt]{2014--2015}{Software Engineer in Security}{Google}{Z\"urich}{Switzerland}{%
+}
+\else
 \cventry[8pt]{2014--2015}{Software Engineer}{Google}{Z\"urich}{Switzerland}{%
 Improved corporate security by building forensics and security tools used by the Google Incident Response and corporate network monitoring teams.
 %
 }
+\fi
+\ifshort
+\cventry[2pt]{2013--2014}{Product Security Intern}{Twitter}{San Francisco}{USA}{%
+}
+\else
 \cventry[8pt]{2013--2014}{Product Security Intern}{Twitter}{San Francisco}{USA}{%
 Identified vulnerable end-points and recommended mitigations in the areas of web security, particularly \href{http://breachattack.com/}{BREACH} and \href{https://developer.mozilla.org/en-US/docs/Security/CSP}{CSP}.
 %
 }
-\cventry[8pt]{2010--2011}{Co-Founder, Technical Lead}{Kamibu}{Athens}{Greece}{%
-Co-founded start-up gaming software company with 5 fellow students.
-Fund-raised a seed round of $\$70{,}000$ to create
-WebGL-based game engine.% (\href{https://github.com/kamibu/finalengine}{Source}).
+\fi
+\ifshort\else
+\iflong
+\cventry[8pt]{2010--2011}{Co-Founder, Technical Lead}{\href{https://github.com/kamibu/finalengine}{Kamibu}}{Athens}{Greece}{%
+Gaming software company.
+Raised seed round of $\$70{,}000$ to create
+WebGL game engine.% (\href{https://github.com/kamibu/finalengine}{Source}).
 %
 }
+\else
+\cventry[8pt]{2010--2011}{Co-Founder, Technical Lead}{\href{https://github.com/kamibu/finalengine}{Kamibu}}{Athens}{Greece}{%
+Gaming start-up.
+Fund-raised a seed round of $\$70{,}000$ to create
+WebGL game.% (\href{https://github.com/kamibu/finalengine}{Source}).
+%
+}
+\fi
+\fi
 
 \cventry[8pt]{2006--2008}{Backend Software Engineer}{deviantART}{Los Angeles, USA}{}{%
 Community with 50,000,000 daily hits, 15,000,000 users.
@@ -120,18 +141,18 @@ Leveraged memcached, sharding and partitioning to improve performance and scalab
 }
 
 \urlstyle{same}
-\cventry[8pt]{2005--2010}{Co-Founder, Technical Lead}{Zino}{Athens}{Greece}{%
+\iflong
+\cventry[8pt]{2005--2010}{Co-Founder, Technical Lead}{\href{https://github.com/dionyziz/zino}{Zino}}{Athens}{Greece}{%
 Co-founded ``Zino'', a Greek social network with over 20,000 members.
 Created over 300,000 lines of PHP, Javascript, HTML/CSS, XML/XSLT code and supervised 5 programmers.
 %\\GitHub Repository: \url{https://github.com/dionyziz/zino}
 }
-%\cventry[10pt]{2006--2007}{Software Engineer}{Shmmy}{Athens}{Greece}{%
-%I developed the front and back-end code for a university forum accommodating course information and material.
-%}
-%\cventry[5pt]{2005--2006}{Software Engineer}{BlogCube}{Ioannina}{Greece}{%
-%Participated in the creation of an experimental blogging platform that was completely
-%based on ajax.
-%}
+\else
+\cventry[8pt]{2005--2010}{Co-Founder, Technical Lead}{\href{https://github.com/dionyziz/zino}{Zino}}{Athens}{Greece}{%
+Greek social network with 20,000 members and 300,000 SLoC.
+%\\GitHub Repository: \url{https://github.com/dionyziz/zino}
+}
+\fi
 
 \iflong
 \section{Publications}
